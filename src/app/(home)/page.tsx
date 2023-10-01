@@ -2,6 +2,7 @@ import { Pokemon } from '@/interfaces/Pokemon'
 import { PokemonService } from '@/services/PokemonService'
 import './home.scss'
 import Image from 'next/image'
+import PokemonCard from '@/components/pokemon-card'
 
 export default async function Home() {
   const pokemonService = new PokemonService()
@@ -22,7 +23,9 @@ export default async function Home() {
       </section>
       <section className="pokemon-container flex flex-wrap justify-between items-center gap-8">
         {pokemonList &&
-          pokemonList.map((pokemon) => <p key={pokemon.id}>{pokemon.name}</p>)}
+          pokemonList.map((pokemon) => (
+            <PokemonCard key={pokemon.id} pokemon={pokemon} />
+          ))}
       </section>
     </main>
   )
