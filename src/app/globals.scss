@@ -4,9 +4,11 @@
 
 :root {
   --background-color: #fff;
-  --font-main-color: #000;
+  --font-main-color-black: #000;
+  --font-main-color-secondary: #333;
   --dark-color: #333;
   --light-color: #fff;
+  --red-color: #e33d33;
 
   @media (prefers-color-scheme: dark) {
   }
