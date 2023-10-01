@@ -9,7 +9,6 @@
   --light-color: #fff;
 
   @media (prefers-color-scheme: dark) {
-    
   }
 }
 
@@ -20,5 +19,6 @@ body {
 
   h1 {
     font-size: 2em;
+    font-weight: bold;
   }
 }
