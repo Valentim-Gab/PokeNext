@@ -10,7 +10,7 @@ export default async function Home() {
 
   return (
     <main className="min-h-screen flex flex-col items-center">
-      <section className="title flex justify-center items-center mb-8">
+      <section className="title flex justify-center items-center mb-8 gap-4">
         <h1>
           <span>Poke</span>Next
         </h1>

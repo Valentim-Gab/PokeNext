@@ -20,4 +20,17 @@ export class PokemonService {
 
     return []
   }
+
+  async get(id: number): Promise<Pokemon | null> {
+    try {
+      const res = await fetch(`${this.pokemonApiUrl}/${id}`)
+      const data = await res.json()
+
+      return data
+    } catch (error) {
+      console.error(error)
+    }
+
+    return null
+  }
 }
