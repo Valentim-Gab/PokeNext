@@ -1,0 +1,15 @@
+.title {
+  color: var(--main-color-third);
+  text-align: center;
+  font-size: 1.5em;
+
+  span {
+    color: var(--red-color);
+  }
+}
+
+.pokemon-container {
+  width: 100%;
+  max-width: 1100px;
+  padding: 1em;
+}
