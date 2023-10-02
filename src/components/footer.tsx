@@ -9,7 +9,7 @@ export default function Footer() {
         <span>PokeNext</span> &copy; 2023
       </p>
       <p>
-        Desenvolvido por{' '}
+        Desenvolvido por
         <span>
           <Link href="https://github.com/Valentim-Gab" target="_blank">
             Gabriel Valentim
