@@ -2,6 +2,7 @@
 
 const nextConfig = {
   images: {
+    unoptimized: true,
     domains: [process.env.POKEMON_INFO_API_URL]
   }
 }
