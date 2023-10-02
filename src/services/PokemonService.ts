@@ -5,7 +5,7 @@ export class PokemonService {
 
   async getAll(): Promise<Pokemon[]> {
     try {
-      const maxPokemons = 1010
+      const maxPokemons = 251
       const res = await fetch(`${this.pokemonApiUrl}/?limit=${maxPokemons}`)
       const data = await res.json()
 
