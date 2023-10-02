@@ -21,7 +21,7 @@ export default async function Home() {
           alt="PokeNext"
         />
       </section>
-      <section className="pokemon-container flex flex-wrap justify-between items-center gap-8">
+      <section className="pokemon-container flex flex-wrap justify-center items-center gap-8">
         {pokemonList &&
           pokemonList.map((pokemon) => (
             <PokemonCard key={pokemon.id} pokemon={pokemon} />

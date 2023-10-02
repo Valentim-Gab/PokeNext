@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --background-color: #fff;
-  --font-main-color-black: #000;
-  --font-main-color-secondary: #333;
+  --main-color-primary: #000;
+  --main-color-secondary: #fff;
+  --main-color-third: #333;
   --dark-color: #333;
   --light-color: #fff;
   --red-color: #e33d33;
@@ -15,8 +15,8 @@
 }
 
 body {
-  color: var(--font-main-color);
-  background: var(--background-color);
+  color: var(--main-color-primary);
+  background: var(--main-color-secondary);
   font-size: 16px;
 
   h1 {
@@ -24,7 +24,28 @@ body {
     font-weight: bold;
   }
 
+  h2 {
+    font-size: 1.7em;
+  }
+
   h3 {
     font-size: 1.4em;
+  }
+}
+
+.not-found {
+  a {
+    font-size: 1.2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0.4em 1.2em;
+    border: 1px solid var(--main-color-third);
+    border-radius: 0.2em;
+    transition: 0.4s;
+
+    &:hover {
+      background-color: var(--main-color-third);
+      color: var(--main-color-secondary);
+    }
   }
 }

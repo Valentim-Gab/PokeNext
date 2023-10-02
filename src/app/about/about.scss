@@ -9,4 +9,13 @@
     margin-bottom: 1.5em;
     max-width: 500px;
   }
+
+  a {
+    color: var(--red-color);
+    transition: 0.4s;
+
+    &:hover {
+      font-size: 1.4em;
+    }
+  }
 }
