@@ -2,6 +2,12 @@ import React from 'react'
 import Image from 'next/image'
 import './about.scss'
 import Link from 'next/link'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Sobre',
+  description: 'Sobre a PokeNext',
+}
 
 export default function About() {
   return (

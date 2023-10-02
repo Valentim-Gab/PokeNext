@@ -8,7 +8,7 @@ export default function Footer() {
       <p>
         <span>PokeNext</span> &copy; 2023
       </p>
-      <p>
+      <p className="flex gap-1">
         Desenvolvido por
         <span>
           <Link href="https://github.com/Valentim-Gab" target="_blank">

@@ -7,9 +7,24 @@ interface PokemonProps {
   params: {
     id: number
   }
+  searchParams: {
+    name: string
+  }
 }
 
-export default async function Pokemon({ params }: PokemonProps) {
+export async function generateMetadata({ searchParams }: PokemonProps) {
+  let title = searchParams.name
+  const firstLetter = title[0].toUpperCase();
+  const restOfString = title.slice(1);
+  title = firstLetter + restOfString
+
+  return {
+    title: title,
+    description: `Página sobre o Pokémon ${title}`
+  }
+}
+
+export default async function Pokemon({ params, searchParams }: PokemonProps) {
   const pokemonService = new PokemonService()
   const pokemon = await pokemonService.get(params.id)
   let imageUrl = ''
