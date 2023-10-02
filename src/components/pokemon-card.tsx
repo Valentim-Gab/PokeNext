@@ -18,7 +18,7 @@ export default function PokemonCard({ pokemon }: { pokemon: Pokemon }) {
       />
       <p className="number flex justify-center items-center">#{pokemon.id}</p>
       <h3 className="name">{pokemon.name}</h3>
-      <Link href={`/pokemon/${pokemon.id}`} className="btn">
+      <Link href={`/pokemon/${pokemon.id}?name=${pokemon.name}`} className="btn">
         Detalhes
       </Link>
     </div>
