@@ -45,13 +45,13 @@ export default async function Pokemon({ params }: PokemonProps) {
             </div>
           </section>
           <section className="flex items-center justify-center mt-8">
-            <div className="data_height flex-col items-center justify-center px-4">
+            <div className="data_height flex-col items-center justify-center">
               <h4>
                 <strong>Altura:</strong>
               </h4>
               <p>{pokemon.height * 10} cm</p>
             </div>
-            <div className="flex flex-col items-center justify-center px-4">
+            <div className="data_weight flex flex-col items-center justify-center">
               <h4>
                 <strong>Peso:</strong>
               </h4>

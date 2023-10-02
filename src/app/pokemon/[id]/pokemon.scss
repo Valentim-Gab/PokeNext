@@ -101,4 +101,13 @@
   .data_height {
     border-right: 1px solid #ccc;
   }
+
+  .data_height,
+  .data_weight {
+    padding: 0 1em;
+
+    p {
+      text-transform: lowercase;
+    }
+  }
 }
